@@ -43,19 +43,19 @@ There are also 3 additional files that may help our predictions:
 
 Over half the train users did not book a destination ('NDF'), and the 'US' is the most common destination country.
 
-**destination, count, pct**
-NDF, 124543, .5834
-US, 62376, .2922
-other, 10094,	.0472
-FR , 5023,	.0235
-IT, 2835,	.0132
-GB, 2324,	.0108
-ES, 2249,	.0105
-CA, 1428,	.0066
-DE, 1061,	.0049
-NL,  762,	.0035
-AU,  539,	.0025
-PT, 217,	.0010
+**destination, count, pct**  
+NDF, 124543, .5834  
+US, 62376, .2922  
+other, 10094,	.0472  
+FR , 5023,	.0235  
+IT, 2835,	.0132  
+GB, 2324,	.0108  
+ES, 2249,	.0105  
+CA, 1428,	.0066  
+DE, 1061,	.0049  
+NL,  762,	.0035  
+AU,  539,	.0025  
+PT, 217,	.0010  
 
 ### Missing data
 
