@@ -12,7 +12,7 @@ In this report we look at a [kaggle competition posted by Airbnb](https://www.ka
 
 ### Describe a solution and Identify metrics
 
-Using data provided by Airbnb about US users' demographic and web session records we make 5 predictions per user of where they will stay. Of the 12 possible outcomes, there are 11 destination countries ('US', 'FR', 'CA', 'GB', 'ES', 'IT', 'PT', 'NL','DE', 'AU') and 1 outcome of no destination found ('NDF').
+Using data provided by Airbnb about US users' demographic and web session records we make 5 predictions per user of where they will stay. Of the 12 possible outcomes, there are 11 destination countries ('US':USA, 'FR':France, 'CA':Canada, 'GB':Great Britain, 'ES':Spain, 'IT':Italy, 'PT':Portugal, 'NL':Netherlands, 'DE':Germany, 'AU':Australia) and 1 outcome of no destination found ('NDF').
 
 Our predictions are evaluated using [NDCG](https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/details/evaluation). The 5 predictions made per user should be ordered so the most probable destination goes first. The NDCG metric gives higher weight to correct predictions that are higher in order, with a perfect score of 1 and lowest score of 0.
 
@@ -100,7 +100,7 @@ However, decision trees can often produce weak classifiers, so we utilize two en
 
 [XGBoost](https://github.com/dmlc/xgboost) is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the Gradient Boosting framework, which produces an ensemble of weak decision tree learners via additive training (boosting).
 
-Attempts were made to model the data with a muliple layer neural net using Google's [TensorFlow](https://www.tensorflow.org/) library, but performance of the model did not improve on random forest or XGBoost, most likely due to suboptimal tuning of the model hyperparameters or inadequate feature data pre-processing. This could be an interesting method to pursue further in order to improve prediction performance.
+Attempts were made to model the data with a muliple layer neural net using Google's [TensorFlow](https://www.tensorflow.org/) library, but performance of the model did not improve on the benchmark (Public score 0.85359, Private 0.85670), most likely due to suboptimal tuning of the model hyperparameters or inadequate feature data pre-processing. This could be an interesting method to pursue further in order to improve prediction performance.
 
 3. Solution implementation
 --------------------------
