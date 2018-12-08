@@ -24,8 +24,6 @@ achieves a Public LB score of 0.85359 (Private 0.85670).
 
 ## 2. Exploratory analysis
 
-### Analyze the problem
-
 The train users data has 213451 users and 15 features. The target variable is `country_destination` and there is a column `date_first_booking` that appears to indicate when the booking was made (if the target variable isn't 'NDF').
 There is demographic info for age and gender as well as user data such as dates of visits, signup details, and how the user accessed the service.
 
@@ -98,8 +96,7 @@ However, decision trees can often produce weak classifiers, so we utilize two en
 
 Attempts were made to model the data with a muliple layer neural net using Google's [TensorFlow](https://www.tensorflow.org/) library, but performance of the model did not improve on the benchmark (Public score 0.85359, Private 0.85670), most likely due to suboptimal tuning of the model hyperparameters or inadequate feature data pre-processing. This could be an interesting method to pursue further in order to improve prediction performance.
 
-3. Solution implementation
---------------------------
+## 3. Solution implementation
 
 ### Pre-process the data
 **Date features**  
