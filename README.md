@@ -1,9 +1,6 @@
 # Airbnb New User Bookings
 
-1. Problem Definition
----------------------
-
-### Define the problem
+## 1. Problem Definition
 
 How do we predict user intent based on their online behavior? Knowing what people's motivations are as they use a web or app can help businesses and service providers show more relevant content and provide greater value.
 
